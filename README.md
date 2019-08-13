@@ -1,6 +1,6 @@
 # Mock Messenger Ionic
 
-## SWEN325 - Second Trimester 2018 - Victory University
+## SWEN325 - Second Trimester 2018 - Victoria University
 
 An Android and IOS compatible messaging app that is created with the Ionic framework.
 Data storage is hosted on the Google Firebase cloud platform.
