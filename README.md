@@ -1,4 +1,4 @@
-# mock Messenger Ionic
+# Mock Messenger Ionic
 
 ## SWEN325 - Second Trimester 2018 - Victory University
 
