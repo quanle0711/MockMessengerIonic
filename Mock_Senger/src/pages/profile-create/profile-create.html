@@ -1,0 +1,69 @@
+<!--
+  Generated template for the ProfileCreatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<script src="../home/home.ts"></script>
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Introduction</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-slides pager>
+
+        <ion-slide>
+            <h1>Welcome to Mock-Senger!</h1>
+            <div style="padding: 30px">
+                Hi there! Since this is your very first time using my our messenger app.
+                We will guide you through the set up process of profile.
+
+                Swipe to the next slide to begin!
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <h2>User Information</h2>
+            (you change later change all of this if you want to. don't worry!)
+            <ion-label>What is your desired username?</ion-label>
+            <ion-item>
+                <ion-input [(ngModel)]="profile.username" (input)="checkUsername($event)"></ion-input>
+            </ion-item>
+
+            <div *ngIf="usernameCheck == true" style="color: green">
+                <p>the username {{this.profile.username}} is available</p>
+            </div>
+
+            <div *ngIf="usernameCheck == false" style="color: red">
+                <p>the username {{this.profile.username}} is already taken</p>
+            </div>
+
+            <ion-label>What is your first name?</ion-label>
+            <ion-item>
+                <ion-input [(ngModel)]="profile.firstName"></ion-input>
+            </ion-item>
+
+            <ion-label>What is your last name?</ion-label>
+            <ion-item>
+                <ion-input [(ngModel)]="profile.lastName"></ion-input>
+            </ion-item>
+        </ion-slide>
+
+        <ion-slide>
+            <h2>Set A profile Photo</h2>
+            (Not Yet Implemented, Sorry!)
+        </ion-slide>
+
+        <ion-slide>
+            <h2>Thats it, you're done!</h2>
+            <button ion-button color="accent" clear block (click)="createProfile()">Create Profile and Continue!
+            </button>
+        </ion-slide>
+
+    </ion-slides>
+
+</ion-content>

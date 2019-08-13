@@ -1,0 +1,25 @@
+page-users-tab {
+
+}
+
+.smallerName {
+  color: grey;
+  font-size: 12px;
+}
+
+.animation {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
